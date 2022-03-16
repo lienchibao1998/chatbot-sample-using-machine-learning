@@ -1,0 +1,188 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, Wellcome to DaLat","Have a good trip in Da Lat","Hi you, how can Rose help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you again!","Have a nice day and fun","See you again, Dreamy City goodbye."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Rose thanks", "Thank you", "That's helpful", "Awesome, thanks", "Rose thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, Rose can't understand you","Please give Rose more details","Sorry, Rose do not understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?","How Rose could help me?","What you can do?","What Rose can do?","What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["Rose can provide you with some information about the best time to arrive in Dalat, how much is the total cost of the trip?, By what means to get to Da Lat,should stay at a hotel, hostel or homestay,place famous tourist,delicious and cheap food,check in virtual living with super beautiful cafes, where should you go at night?, what gifts to buy,and some little experience when coming to Da Lat,What information do you want to know?","Rose will help you know some information about the best time to arrive in Dalat, how much is the total cost of the trip?, By what means to Da Lat, at a hotel, hostel or homestay, tourist destination. Famous calendar, cheap delicious food, virtual live check in with super nice cafes, where to go at night?, What gifts to buy and some little experiences when coming to Da Lat, what do you choose?"],
+         "context": [""]
+        },
+        {"tag": "weather_best_time",
+         "patterns": ["What is the best time to go to Dalat?", "the best time to arrive in Dalat", "what is the best time to come to Dalat", "what is the best time?", "best time","weather","weather best time","find weather month","month best time","how to weather?"],
+         "responses": ["Traveling to Dalat from February to April, from June to September, September to December. Which month do you want to know the weather information?"],
+         "context": ["search_january_to_march","search_april_to_june","search_july_to_september","search_october_to_december"]
+        },
+        {"tag": "search_january_to_march",
+         "patterns": ["search january to march","find january to march","search january","january","find january february","january february","find february march","search february march","march"],
+         "responses": ["Coming to Da Lat in the first months of the year, you will feel the flavor of spring in the highlands. The weather at this time is still a bit cold of winter, but it is embellished by warm rays, and there is no rain so you can comfortably explore the places. In addition, hundreds of flowers bloom in spring, if you like the poetic look and enjoy looking at the flowers, this is the ideal occasion.you will enjoy the white board flower season, the cherry blossom season, the mimosa flower season"],
+         "context": [""]
+        },
+        {"tag": "search_april_to_june",
+         "patterns": ["search april to june","find april to june","search april","april","find april","april may","find april may","search april may","june","search june","find june"],
+         "responses": ["From near the end of April is the time to change the season from the dry season to the rainy season, so the temperature is lower, which means that the weather is much cooler and more pleasant. This month is considered to be the most ideal month of the year.In May and June, there was rain in Dalat. Usually around noon and afternoon there will be sudden rains, but usually only lasts 1-2 hours."],
+         "context": [""]
+        },
+        {"tag": "search_july_to_setember",
+         "patterns": ["search september","find september","september","august september","find august september","search august september","find july","search july","july"],
+         "responses": ["If you want to experience a unique and strange trip, you can choose these months. It is very cool at this time, even in September in the evening and early morning the temperature is only about 18 - 20 degrees Celsius, but the day is extremely cool and comfortable. With this type of weather, there is nothing more ideal to start the journey to discover the culinary paradise of Dalat."],
+         "context": [""]
+        },
+        {"tag": "search_october_to_december",
+         "patterns": ["search october to december","find october to december","october","search october november","october november","find october november","december","search december","find december"],
+         "responses": ["The weather starts to get chilly in the morning and evening, fog also appears more, the scene becomes more romantic than ever. You will enjoy the scent of wild Da Quy flower and the scent pink grass"],
+         "context": [""]
+        },
+        {"tag": "total_cost",
+         "patterns": ["total cost","total money","how to money go to Dalat?","How money","what is total cost?", "What is the total cost for the trip?", "How much is the trip total cost?","the total cost how much is comfortable"],
+         "responses": ["According to Rose, the total cost per person is estimated from 1.8 million to 2.5 million for 1 person. Depends on how many days you go and the cost of eating and drinking to visit. Everyone can calculate and adjust the reasonable expenses to save the most money on this trip"],
+         "context": [""]
+        },
+        {"tag": "means",
+         "patterns": ["Which means for me to come here?", "Can you give me some information about the means to get here?", "travel means for me", "travel means", "Tell me some means to come here?" ],
+         "responses": ["Da Lat tourism by plane service,Da Lat tourism by bus service,Dalat travel choose the means to go in the city,Please choose information and ask Rose?"],
+         "context": ["search_plane","search_bus","search_means_to_go_in_the_city"]
+        },
+        {"tag": "search_plane",
+         "patterns": ["find me Da Lat tourism by plane service","find plane","search plane","plane services"],
+         "responses": ["Airline service is now relatively cheap (except for holidays and near Tet), air tickets depart from Hanoi, Saigon to Da Lat, the price is only from 370,000 - 2,000,000 VND depending on type and time"],
+         "context": ["plane_search_airline"]
+        },
+        {"tag": "search_plane_airline",
+         "patterns": ["Find me airline", "Find plane airline", "List of plane airline","Search plane airline"],
+         "responses": ["Vietnam Airline orders at website: <a href='www.vietnamairlines.com'>www.vietnamairlines.com</a>","VietJetAir - Hotline: 1900 1886. Order at: <a href='www.vietjetair.com'>www.vietjetair.com</a>"],
+         "context": [""]
+        },
+        {"tag": "search_means_to_go_in_the_city",
+         "patterns": ["find me the means to go in the city","the means to go around Dalat city","means to go in the city of Dalat","means around Dalat city"],
+         "responses": ["Motorcycle rental, taxi in Dalat, grap in Dalat, would you like to choose?"],
+         "context": ["search_motorcycle_rental"]
+        },
+        {"tag": "search_motorcycle_rental",
+         "patterns": ["find me motorcycle rental", "Search motorcycle rental services", "I want to find motorcycle rental services", "find motorcycle rental services"],
+         "responses": ["Car rental is also quite reasonable ranging from 80k - 120k depending on the type of car you rent. You can contact Ms. Hoa directly at 0903.612.443 for more detailed advice, thank you!"],
+         "context": [""]
+        },
+        {"tag": "search_taxi_in_Dalat",
+         "patterns": ["find me taxi in Dalat","search taxi in Dalat services","i want to find taxi in Dalat","find taxi in Dalat services"],
+         "responses": ["In Da Lat, the price of TAXI is also quite cheap because when sitting in TAXI without turning on the air conditioner, the charge for km is only about 8k - 10k for each type."],
+         "context": [""]
+        },
+        {"tag": "search_grap_in_Dalat",
+         "patterns": ["find me grap in Dalat","search grap in Dalat services","i want to find grap in Dalat","find grap in Dalat services"],
+         "responses": ["Like everywhere, Dalat still has GRAP. You already have a clear destination, you should also choose this vehicle to clearly price to the attractions to avoid the running around of TAXI here."],
+         "context": [""]
+        },
+        {"tag": "search_bus",
+         "patterns": ["find me Da Lat tourism by bus service","search Da Lat tourism by bus service","Da Lat tourism by bus service","find Da Lat tourism by bus service"],
+         "responses": ["If you choose to move from Can Tho to Da Lat by bus, it will take about 11-12 hours by car, if you do not take a family car, there are 2 garage that is Phuong Trang bus service or Thanh Buoi bus service. Which bus do you want to choose?"],
+         "context": ["search_Phuong_Trang_bus_services","search_Thanh_Buoi_bus_services"]
+        },
+        {"tag": "search_Phuong_Trang_bus_services",
+         "patterns": ["find me search Phuong Trang bus services","search Phuong Trang bus services","Phuong Trang bus services","find Phuong Trang bus services"],
+         "responses": ["Ticket prices range from 320,000 VND - 330,000 VND / ticket.Phone: 1900 6067 - 02923 769 768"],
+         "context": [""]
+        },
+        {"tag": "search_Thanh_Buoi_bus_services",
+         "patterns": ["find me search Thanh Buoi bus services","search Thanh Buoi bus services","Thanh Buoi bus services","find Thanh Buoi bus services"],
+         "responses": ["Ticket prices range from 320,000 VND - 330,000 VND / ticket.Phone: 1900 6079"],
+         "context": [""]
+        },
+        {"tag": "search_stay_services",
+         "patterns": ["Where to stay when going to Da Lat?","where to stay","find me search stay services","search stay services"],
+         "responses": ["Dalat is the cradle of two types of accommodation services, Homestay and Hostel, and these two types of accommodation are completely different. There are also traditional hotel services, which one would you like to choose?"],
+         "context": ["search_homestay","search_hostel","search_hotel"]
+        },
+        {"tag": "search_homestay",
+         "patterns": ["find me homestay services","homestay","search homestay services","search homestay","find homestay services","homestay in Dalat"],
+         "responses": ["Homestay in Da Lat are located in locations overlooking the beautiful landscape, very delicately decorated, private space, romantic scenery, love letters and romance.The price at homestay ranges from 100,000 VND to 300,000 VND."],
+         "context": [""]
+        },
+        {"tag": "search_hostel",
+         "patterns": ["find me hostel services","hostel","search hostel services","search hostel","find hostel services","hostel in Dalat"],
+         "responses": ["Hostel is a type of collective accommodation, but you can rest assured, safety and security are always guaranteed. The sanitation is nothing to discuss, very clean and neat, the price at Hostel is quite cheap. Rose will introduce you to some hostels such as: Pi hostel Dalat, Queen hostel Dalat, Beepub Dalat hostel, ... etc ...","Rose will introduce to you some hostels such as: Pi hostel Dalat, Queen hostel Dalat, Beepub Dalat hostel, ... etc ... Visit https://agotourist.com/hostel-da-lat/ to has more information for you."],
+         "context": [""]
+        },
+        {"tag": "search_hotel",
+         "patterns": ["find me hotel services","hotel","search hotel services","search hotel","find hotel services","hotel in Dalat"],
+         "responses": ["An Phu Hotel is 500m from Da Lat market, 1.5km from Con Ga Church. The hotel has a total of 40 newly opened rooms, so the rooms here are very new, clean and fully equipped, very luxurious and eye-catching. The hotel staff is also very professional and enthusiastic, wholeheartedly serving guests."],
+         "context": ["search_hotel_info"]
+        },
+        {"tag": "search_hotel_info",
+         "patterns": ["find me An Phu Hotel","An Phu Hotel","search An Phu Hotel","An Phu Hotel Dalat"],
+         "responses": ["Would you like to see the hotel room rate or contact information.Please choose?"],
+         "contact": ["search_hotel_rate_room","search_contact_information_hotel"]
+        },
+        {"tag": "search_hotel_rate_room",
+         "patterns": ["find hotel rate room","search hotel rate room","rate room","rate"],
+         "responses": ["Currently, An Phu Hotel is applying many great promotions for customers with prices from 350k - 550k for each different room type. Double Room (2 guests): 350,000 VND / Night Twin Room (2 guests): 350,000 VND / Night Trip Room (3 guests): 450,000 VND / Night Family Room (4 guests): 550,000 VND / Night"],
+         "context": [""]
+        },
+        {"tag": "search_contact_information_hotel",
+         "patterns": ["search contact information hotel","contact information hotel","contact information","information hotel","contact hotel"],
+         "responses": ["Address: 187 Hai Ba Trung - Ward 6 - Dalat City. Booking contact Hotline: 0907 43 03 43. Website: anphuhotel.vn"],
+         "contact": [""]
+        },
+        {"tag": "search_famous_tourist_place",
+         "patterns": ["give me some famous tourist place","find famous tourist place","find famous place","find famous tourist","find tourist place","famous tourist place"],
+         "responses": ["Rose will show you top 9 famous places in Dalat. Enter 'top 9' to view the list !!!"],
+         "context": ["search_top_9"]
+        },
+        {"tag": "search_top_9",
+         "patterns": ["top 9","find top 9","search top 9","9","top"],
+         "responses": ["1-Dalat Night Market -Night Food Area, 2-Valley of Love-A place to confess love in Da Lat, 3-Dat Clay Village-A favorite tourist place of Da Lat, 4-Dalat Railway Station-Old and Dep stations love people in Dalat, 5-Banh Cay Giay Gio-Unique check-in point when coming to Da Lat, 6-City Flower Garden-The most brilliant place in Dalat, 7-Lam Vien Square-An interesting place to have fun in Da Lat, 8-Con Ga Church-The largest church in Dalat, 9-Dalat College of Education-The school has many unique features.Enter 'SEE MORE' to see locations other than the city."],
+         "context": ["see_more"]
+        },
+        {"tag": "see_more",
+         "patterns": ["see more","SEE MORE","more","find more","search more"],
+         "responses": ["1-Mount LangBiang-A place to see the whole of Dalat City, 2 -Tuyet Tinh Coc-The wild features of Dalat valley, 3-Buddha's Hand-The place of the upright hand between the Sky Mountain in Dalat, 4-Datanla Waterfall-The most beautiful and attractive waterfall in Dalat, 5-Truc Lam Zen Monastery-Spirituality of Dalat, 6-Linh Quy Phap An Pagoda-Da Lat Heaven Gate (Son Tung MTP chose this place to create the most famous MV for young people in the MV-Lac Troi), 7-Palace III-King Bao Dai's Palace is now a tourist attraction of Da Lat."],
+         "context": [""]
+        },
+        {"tag": "search_should_eat_what_delicious_cheap_food",
+         "patterns": ["should eat what,where?","delicious cheap food","search should eat what?","search delicious and cheap food","find delicious and cheap food","delicious food","cheap food","eat what"],
+         "responses": ["Please enter 'eating info' to see the list"],
+         "context": ["eating_info"]
+        },
+        {"tag": "eating_info",
+         "patterns": ["eating","eating infor","find eat","find eating","search eat info","food information","what should eating?"],
+         "responses": ["1-Tuy Tuu Lau-A delicious restaurant in Dalat, 2-Ba Hung Nem-Da Lat famous specialties, 3-Banh Can is a delicious dish in Dalat, 4-Chicken La E Hot Pot-A favorite dish in Dalat, 6-Bo Bu grilled skewers restaurant - very crowded in Dalat, 7-Thai hotpot, Japanese hot pot"],
+         "context": [""]
+        },
+        {"tag": "search_check_in_virtual_living_with_super_beautiful_cafes_coffee_shops_",
+         "patterns": ["search check in virtual living with super beautiful cafes","search coffee shops","find coffee","find coffee shops","virtual living cafes coffee","find for me some coffee shops","find for me cafes shops"],
+         "responses": ["1-Cafes shops DO HA in Dalat Square, 2-Up Coffee Dalat, 3-The Dreamer-Cine,Coffee & Tea in Dalat"],
+         "context": [""]
+        },
+        {"tag": "search_buy_gifts",
+         "patterns": ["search buy gifts","buy gifts","find buy gifts","gifts","find for me some gifts"],
+         "responses": ["You want to buy famous specialties in Dalat or reputable shopping places. Please choose?"],
+         "context": ["search_buy_famous_specialties","search_buy_reputable_shopping_place"]
+        },
+        {"tag": "search_buy_famous_specialties",
+         "patterns": ["search buy famous specialties","specialties","find specialties","seach specialties","famous specialties"],
+         "responses": ["Dalat Wine,Dalat jam - attractive and famous dish in Dalat,ATISO Cao or ATISO Tea - Most purchased in Dalat,Buy Strawberry from Dalat - Favorite Gift."],
+         "context": [""]
+        },
+        {"tag": "search_buy_reputable_shopping_place",
+         "patterns": ["search buy reputable shopping place","buy reputable shopping place","shopping place","find shopping place reputable"],
+         "responses": ["Famous Bao Khanh supermarket with the cheapest price in Dalat. Address: No. 285 Nguyen Tu Luc - Da Lat Phone: 0919.241.276. Free Ship within Da Lat city with order of 500k or more. Buy 10 items get 1 free of them. and come directly to meet Ms. Bi, owner of Dalat Specialty Supermarket BAO KHANH to ask for discounts when reading the code 'Dulichkhampha24.com'. "],
+         "context": [""]
+        }
+   ]
+}
